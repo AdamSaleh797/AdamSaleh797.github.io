@@ -5,6 +5,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -17,8 +19,9 @@ body {font-size:16px;}
 <body>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
+<nav class="w3-sidebar w3-2019-eden w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <br>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About Me</a> 
     <a href="#experience & projects" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Experience & Projects</a> 
@@ -28,8 +31,8 @@ body {font-size:16px;}
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+<header class="w3-container w3-top w3-hide-large w3-2019-eden w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-2019-eden w3-margin-right" onclick="w3_open()">☰</a>
   <span>Contents</span>
 </header>
 
@@ -40,10 +43,10 @@ body {font-size:16px;}
 <div class="w3-main" style="margin-left:240px;margin-right:40px">
 
   <!-- About Me -->
-  <div class="w3-container" style="margin-top:20px" id="showcase">
-    <h1 class="w3-jumbo"><b>Adam Saleh</b></h1>
-    <h1 class="w3-xxxlarge w3-text-red" style="margin-top:50px"><b>About Me</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+  <div class="w3-container" style="margin-top:100px" id="showcase">
+        <h1 class="w3-jumbo"><b>Adam Saleh</b></h1>
+        <h1 class="w3-xxxlarge" style="margin-top:50px; color: #9ab091"><b>About Me</b></h1>
+        <hr style="width:50px;border:5px solid #9ab091" class="w3-round">
     <h5>I'm a recent Ohio State graduate and an aspiring software engineer with special interest in web development, game development, machine learning, and computational linguistics.
         My strengths are in object oriented programming, front end development, and computer graphics, but I am willing to dip my toes into just about anything. Outside of Computer Science, I love linguistics and spend a lot of my freetime studying language. 
         I'm also very passionate about social work and access to education. In my opinion, learning is not something that should end once you get a degree. 
@@ -52,92 +55,102 @@ body {font-size:16px;}
 
   <!-- Experience & Projects-->
   <div class="w3-container" id="experience & projects" style="margin-top:20px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Experience & Projects</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color: #9ab091"><b>Experience & Projects</b></h1>
+    <hr style="width:50px;border:5px solid #9ab091" class="w3-round">
     <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>App Development Intern @ Kyoto University of Advanced Science</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i> May 2024 - Aug 2024</span></h6>
-          <p>Spent the summer in Kyoto, Japan working in the Ubiquitous Computing Lab at the Kyoto University of Advanced Science.
-             There, I worked under Dr. Zilu Liang to develop a standalone smartwatch app called Werewolf! that promotes healthy 
-             lifestyle choices through raising a virtual pet.
-          </p>
-          <h9>skills: android studio development, kotlin, project development, front end development</h7>
-          <hr>
-        </div>
+      <br>
+        <a href="https://github.com/KUAS-ubicomp-lab/werewolf" target="_blank" style="text-decoration: none; color: inherit;">
+          <div id="hoverContainer" class="w3-container">
+            <h5 class="w3-opacity"><b>App Development Intern @ Kyoto University of Advanced Science</b></h5>
+            <h6 style="color: #9ab091"><i class="fa fa-calendar fa-fw w3-margin-right"></i> May 2024 - Aug 2024</span></h6>
+            <p>Spent the summer in Kyoto, Japan working in the Ubiquitous Computing Lab at the Kyoto University of Advanced Science.
+               There, I worked under Dr. Zilu Liang to develop a standalone smartwatch app called Werewolf! that promotes healthy 
+               lifestyle choices through raising a virtual pet.
+            </p>
+          </div>
+        </a>
+        <hr>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Computer Graphics Teaching Assistant @ The Ohio State University</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - May 2024</h6>
+          <h6 style="color: #9ab091"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - May 2024</h6>
           <p>Worked as a Teaching Assistant under Dr. Naeem Shareef for CSE 3541, Computer Game and Animation Techniques.
              Held triweekly office hours to help students with Unity projects and graded assignments throughout the semester.
           </p>
-          <hr>
         </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Co-founder/Former President of St. Louis Teens Aid Refugees Today</b></h5>
-          <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Aug 2020</h6>
-          <p> Co-founder and President of START (St. Louis Teens Aid Refugees Today), a teen-led organization that seeks 
-              to aid refugees in their transition to life in St. Louis. I was responsible for planning events, securing a 501c3, 
-              and raising money. START is still running today and has partnered with another organization, Welcome Neighbor STL, 
-              to better assist members of the community. As of today, START has raised over $164000 and has assisted 85 different 
-              families.
-           </p>
-          <hr>
-        </div>
-        <div class="w3-container">
+        <hr>
+        <a href="https://welcomeneighborstl.org/start/" target="_blank" style="text-decoration: none; color: inherit;">
+          <div id="hoverContainer" class="w3-container">
+            <h5 class="w3-opacity"><b>Co-founder/Former President of St. Louis Teens Aid Refugees Today</b></h5>
+            <h6 style="color: #9ab091"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - Aug 2020</h6>
+            <p> Co-founder and President of START (St. Louis Teens Aid Refugees Today), a teen-led organization that xwseeks 
+                to aid refugees in their transition to life in St. Louis. I was responsible for planning events, securing a 501c3, 
+                and raising money. START is still running today and has partnegreen with another organization, Welcome Neighbor STL, 
+                to better assist members of the community. As of today, START has raised over $164000 and has assisted 85 different 
+                families.
+            </p>
+          </div>
+        </a>
+        <hr>
+        <a href="https://github.com/jittaneybrin/thearbiter" target="_blank" style="text-decoration: none; color: inherit;">
+          <div id="hoverContainer" class="w3-container">
             <h5 class="w3-opacity"><b>Retrieval Augmented Generation Chatbot for Boardgame Q&A</b></h5>
-            <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - May 2024</h6>
+            <h6 style="color: #9ab091"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2024 - May 2024</h6>
             <p> As my senior capstone, worked in a team of 6 to create the Arbiter, a RAG Chatbot that specializes
                 in answering ruling questions pertaining to board games. The Arbiter parses uploaded board game 
                 manuals and the BoardGameGeek.com forums to accurately retrieve context for questions. To minimize
                 hallucination, the Arbiter does not answer if it's at a confidence level of less than 60%.</p>
-            <hr>
-        </div>
-        <div class="w3-container">
-            <h5 class="w3-opacity"><b>DraftRuneterra.com - Drafting Site for Riot Games' <i>Legends of Runeterra</i></b></h5>
-            <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2022 - Winter 2023</h6>
-            <p> As a personal project, lead the development of DraftRuneterra.com, a webapp that allows fans of Riot Games' 
-            <i>Legends of Runeterra</i> to draft cards in order to make a deck that is playable in the game. 
-            The website was built from the ground up and involved building a custom server that manages sessions for all logged in users, 
-            syncing with Riot Games' Developer API, and using React.js to build a front end from scratch.
-            </p> <hr>
-        </div>
+          </div>
+        </a>
+        <hr>
+        <a href="http://draftruneterra.com/" target="_blank" style="text-decoration: none; color: inherit;">
+          <div id="hoverContainer" class="w3-container">
+              <h5 class="w3-opacity"><b>DraftRuneterra.com - Drafting Site for Riot Games' <i>Legends of Runeterra</i></b></h5>
+              <h6 style="color: #9ab091"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Summer 2022 - Winter 2023</h6>
+              <p> As a personal project, lead the development of DraftRuneterra.com, a webapp that allows fans of Riot Games' 
+              <i>Legends of Runeterra</i> to draft cards in order to make a deck that is playable in the game. 
+              The website was built from the ground up and involved making a custom server that manages sessions for all logged in users, 
+              syncing with Riot Games' Developer API, and using React.js to build a front end from scratch.
+              </p>
+          </div>
+        </a>
+        <hr>
         <div class="w3-container">
             <h5 class="w3-opacity"><b>Here's some spinning shapes I just made in WebGL too! Why? I just think they're neat.</b></h5>
-            <h6 class="w3-text-red"><i class="fa fa-calendar fa-fw w3-margin-right"></i>This Week (8/11/24)</h6>
+            <h6 style="color: #9ab091"><i class="fa fa-calendar fa-fw w3-margin-right"></i>This Week (8/11/24)</h6>
             <p> You can use WASD to move them around and Y/y, P/p, and R/r to adjust the camera yaw, roll, and pitch. </p>
-            <canvas id="drawingCanvas" width="900" height="250"></canvas>
+            <div style="text-align: center">
+              <canvas id="drawingCanvas" style="width: 50%; height: 250px; "></canvas>
+            </div>
             <script src="setup-functions.js"></script>
             <script src="create-objects.js"></script>
             <script src="gl-matrix.js"></script>
             <script  src="websiteShapes.js"></script>
         </div>
+        <br>
   </div>
 
   <!-- Education -->
   <div class="w3-container" id="education" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Education</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xxxlarge" style="color: #9ab091"><b>Education</b></h1>
+    <hr style="width:50px;border:5px solid #9ab091" class="w3-round">
     <h5> I graduated from the Ohio State University with a Bachelor's in Computer Science and Engineering. 
-       <h5> I was a <a href="https://odi.osu.edu/undergraduate/msp">Morrill Scholar</a> and I was awarded Summa Cum Laude for having a Cumulative GPA of 3.95.</h5>
+       <h5> I was a <a href="https://odi.osu.edu/undergraduate/msp" style="color: #9ab091; font-weight: bolder;">Morrill Scholar</a> and I was awarded Summa Cum Laude for having a Cumulative GPA of 3.95.</h5>
   </div>
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:20px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-      <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-red"></i>Troy, IL</p>
-      <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>adamsaleh797@gmail.com</p>
-      <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-red"></i>(314)800-4750</p>
-      <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-red"></i><a href="https://github.com/AdamSaleh797">My Github</a></p>
-      <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-red"></i><a href="https://www.linkedin.com/in/adam-saleh-975069227">My Linkedin</a></p>
+    <h1 class="w3-xxxlarge" style="color: #9ab091"><b>Contact</b></h1>
+    <hr style="width:50px;border:5px solid #9ab091" class="w3-round">
+      <p><i class="fa fa-home fa-fw w3-margin-right w3-large" style="color: #9ab091"></i>Troy, IL</p>
+      <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large" style="color: #9ab091"></i>adamsaleh797@gmail.com</p>
+      <p><i class="fa fa-phone fa-fw w3-margin-right w3-large" style="color: #9ab091"></i>(314)800-4750</p>
+      <p><i class="fa fa-github fa-fw w3-margin-right w3-large" style="color: #9ab091"></i><a href="https://github.com/AdamSaleh797" style="color: #9ab091">My Github</a></p>
+      <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large" style="color: #9ab091"></i><a href="https://www.linkedin.com/in/adam-saleh-975069227" style="color: #9ab091">My Linkedin</a></p>
   </div>
 
 <!-- End page content -->
 </div>
 
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
 <script>
 // Script to open and close sidebar

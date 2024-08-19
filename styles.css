@@ -1,0 +1,21 @@
+#hoverContainer:hover {
+  background-color: rgba(184, 209, 174, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+  transition: all 0.3s ease;
+}
+
+.split-image {
+  width: 100px;
+  height: 100px;
+  background-image: url("Resume_Portrait.jpg"); /* Replace with your image URL */
+  background-size: 200%; /* Double the width to cover both divs */
+  background-repeat: no-repeat;
+}
+
+.top-half {
+  background-position: center top;
+}
+
+.bottom-half {
+  background-position: center bottom;
+}

@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
     gl.uniformMatrix4fv(viewUniformLocation, gl.FALSE, viewMatrix);
 
     //Clear
-    gl.clearColor(1.0, 0.5, 0.5, 0.5);
+    gl.clearColor(0.0, 0.0, 0.0, 0.0);
     gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
 
     //Redraw with new matrices
